@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
   button_margin: {
     marginBottom: 60,
   },
+  images_style: {
+    maxWidth: "100%",
+  },
 }));
 
 export default function FullWidthGrid() {
@@ -56,6 +59,7 @@ export default function FullWidthGrid() {
               <Grid container className={classes.container}>
                 <Grid item md={6}>
                   <img
+                    className={classes.images_style}
                     src={`${process.env.PUBLIC_URL}/${image}`}
                     alt="product"
                   />
